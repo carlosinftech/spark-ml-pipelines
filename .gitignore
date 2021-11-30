@@ -3,5 +3,6 @@ target/
 
 # Idea project file
 .idea/
+.idea/vcs.xml
 .idea/workspace.xml
 
