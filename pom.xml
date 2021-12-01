@@ -18,9 +18,9 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.12.6</scala.version>
-    <scala.compat.version>2.12</scala.compat.version>
-    <spec2.version>4.2.0</spec2.version>
+    <scala.version>2.13.7</scala.version>
+    <scala.compat.version>2.13</scala.compat.version>
+    <spec2.version>4.13.1</spec2.version>
   </properties>
 
   <dependencies>
@@ -28,6 +28,26 @@
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-library</artifactId>
       <version>${scala.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-core_2.13</artifactId>
+      <version>3.2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql_2.13</artifactId>
+      <version>3.2.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-mllib_2.13</artifactId>
+      <version>3.2.0</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Test -->
@@ -40,7 +60,7 @@
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest_${scala.compat.version}</artifactId>
-      <version>3.0.5</version>
+      <version>3.3.0-SNAP3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
